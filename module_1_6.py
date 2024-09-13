@@ -3,10 +3,13 @@ print(date_of_birth)
 print(date_of_birth['Laplas'])
 print(date_of_birth.get('Mr.Kukumber'))
 date_of_birth['Royho'] = 1992   #если в словаре обратится к несуществующему ключу,то он его просто создает,и добавляет к основному словарю
-date_of_birth.update({"Kolin" : 1899,"Nibelung" : -233})
+date_of_birth.update({"Kolin" : 1899 , "Nibelung" : -233})
 print(date_of_birth)
-del date_of_birth['Kolin']
+a = date_of_birth.pop('Kolin')
 print(date_of_birth)
+print(a)
+
+
 
 my_set = {232,4432,"Kolin",'NoneKolin',9933.323,3434.555,9933.323,232,'Kolin'}
 print(my_set)
